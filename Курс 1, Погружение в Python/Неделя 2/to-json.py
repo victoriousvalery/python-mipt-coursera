@@ -9,10 +9,10 @@ def to_json(func):
     return wrapped
 
 
-# @to_json
-# def get_data():
-#     return {
-#         'data': [1,2,3]
-#     }
-#
-# print(get_data())
+@to_json
+def get_data():
+    return {
+        'data': [1,2,3]
+    }
+
+print(get_data())
